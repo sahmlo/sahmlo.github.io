@@ -1,25 +1,32 @@
-# Portfolio — Sara Melo
+# Sara Melo — Portfolio
 
-Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica,
-experiências profissionais, habilidades e projetos na área de tecnologia.
+Portfólio pessoal de Sara Melo.
 
-## 🌐 Sobre o projeto
+## Sobre
 
-Este portfólio foi desenvolvido com HTML, CSS e JavaScript, com foco em
-uma interface simples, responsiva e com suporte aos modos claro e escuro.
+Estudante do Bacharelado Interdisciplinar em Ciência e Tecnologia na UFBA e concluinte do Técnico em Desenvolvimento de Sistemas no SENAI, com foco em Desenvolvimento Web.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
+- JavaScript
+- React
 - HTML
 - CSS
-- JavaScript
+- Python
+- Node.js
+- MySQL
+- Git
+- GitHub
 
-## 🎓 Formação
+## Estrutura
 
-- Bacharelado Interdisciplinar em Ciência e Tecnologia — UFBA
-- Técnico em Desenvolvimento de Sistemas — SENAI
-
-## 📂 Projetos
-
-O portfólio reúne projetos acadêmicos, profissionais e pessoais desenvolvidos
-ao longo da minha formação em tecnologia.# sahmlo.github.io
+```text
+├── css/
+│   └── styles.css
+├── image/
+│   └── sahmlo.png
+├── js/
+│   └── script.js
+├── index.html
+└── README.md
+```

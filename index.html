@@ -3,318 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Melo - Desenvolvedora Full Stack </title>
+
+    <meta name="description" content="Portfólio de Sara Melo, estudante de Ciência e Tecnologia e Desenvolvimento de Sistemas.">
+    <meta name="author" content="Sara Melo S. de Jesus">
+
+    <title>Sara Melo | Desenvolvimento Web</title>
+
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header/Navigation -->
+    <!-- Navegação -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h2>&lt;Portfólio/&gt;</h2>
+        <nav class="nav container">
+            <a href="#home" class="logo">&lt;SaraMelo/&gt;</a>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo claro" title="Modo claro">
+                    <span id="theme-icon">☀️</span>
+                </button>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contato</a>
-                </li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Olá, eu sou Sara Melo
-                </h1>
-                <h2 class="hero-subtitle">Estudante em Desenvolvimento de Sistemas</h2>
-                <p class="hero-description">
-                    Sou apaixonada por criar soluções digitais inovadoras que proporcionem experiências de usuário excepcionais, combinando criatividade e tecnologia para transformar ideias em realidade.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="code-block">
-                    <div class="code-header">
-                        <div class="code-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="code-title">welcome.js</span>
+    <main>
+        <!-- Apresentação -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <span class="eyebrow">Olá, eu sou a Sara</span>
+
+                    <h1>
+                        Graduada em <span>Ciência e Tecnologia</span>
+                        com foco em Desenvolvimento Web.
+                    </h1>
+
+                    <p>
+                        Estou finalizando minha formação técnica em Desenvolvimento de Sistemas
+                        no SENAI e cursando o Bacharelado Interdisciplinar em Ciência e Tecnologia
+                        na UFBA. Gosto de transformar ideias em interfaces e soluções digitais.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="button primary">Ver projetos</a>
+                        <a href="#contact" class="button secondary">Vamos conversar</a>
                     </div>
-                    <div class="code-content">
-                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">'Sara Melo'</span>,
-  <span class="property">skills</span>: [<span class="string">'JavaScript'</span>, <span class="string">'React'</span>, <span class="string">'Python'</span>],
-  <span class="property">passion</span>: <span class="string">'Criar código limpo'</span>,
-  <span class="property">status</span>: <span class="string">'Disponível para novos projetos'</span>
+
+                    <div class="hero-links">
+                        <a href="https://github.com/sahmlo" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/sara-melo-s-de-jesus-b47b97367/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    </div>
+                </div>
+
+                <div class="hero-card reveal">
+                    <div class="window-top">
+                        <span></span><span></span><span></span>
+                        <small>about-me.js</small>
+                    </div>
+
+                    <pre><code><span class="code-keyword">const</span> sara = {
+  <span class="code-property">nome</span>: <span class="code-string">"Sara Melo"</span>,
+  <span class="code-property">foco</span>: <span class="code-string">"Desenvolvimento Web"</span>,
+  <span class="code-property">estudando</span>: [
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"React"</span>,
+    <span class="code-string">"Python"</span>
+  ],
+  <span class="code-property">status</span>: <span class="code-string">"Construindo meu próximo projeto"</span>
 };</code></pre>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Sou estudante técnica em Tecnologia da Informação com foco em Desenvolvimento de Sistemas, interessada em programação, banco de dados e desenvolvimento web, sempre buscando aprender novas tecnologias e aplicar meus conhecimentos na prática. Gosto de transformar ideias em soluções que facilitem o dia a dia das pessoas e melhorem processos. Atualmente, desenvolvo projetos práticos para aprimorar minhas habilidades em Python, JavaScript, MySQL e no uso de ferramentas como Git e GitHub, com o objetivo de crescer como desenvolvedora e contribuir com projetos que realmente façam a diferença.
-                    </p>
-                    <p>
-                       Acredito que um bom código deve ser não apenas funcional, mas também limpo, eficiente e bem documentado, garantindo qualidade e facilidade de manutenção. Estou sempre em busca de novos desafios e oportunidades que me permitam aprender, aprimorar minhas habilidades e crescer profissionalmente, contribuindo com soluções cada vez melhores.
-                    </p>
+        <!-- Sobre -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">01 — Sobre</span>
+                    <h2>Um pouco sobre mim</h2>
                 </div>
-                <div class="about-image">
-                    <div class="profile-card">
-                        <div class="profile-avatar">
-                            <img src="image/sahmlo.png" alt="Foto de Sara" width="100" height="100">
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Sou estudante de Ciência e Tecnologia na Universidade Federal da Bahia
+                            e estou no último módulo do Técnico em Desenvolvimento de Sistemas no SENAI.
+                            Minha trajetória une formação técnica, universidade e projetos desenvolvidos
+                            durante minha formação.
+                        </p>
+
+                        <p>
+                            Tenho interesse principalmente em Desenvolvimento Web e venho aprofundando
+                            meus conhecimentos em JavaScript, React e Python. Também tenho experiência
+                            com HTML, CSS, Node.js, MySQL, Git e GitHub.
+                        </p>
+
+                        <p>
+                            Gosto de aprender colocando a mão na massa e de criar soluções que tenham
+                            utilidade para pessoas e organizações. Meu objetivo é continuar evoluindo
+                            tecnicamente e construir experiência profissional na área de tecnologia.
+                        </p>
+                    </div>
+
+                    <aside class="profile-card reveal">
+                        <div class="profile-image">
+                            <img src="image/sahmlo.png" alt="Sara Melo">
                         </div>
+
                         <h3>Sara Melo</h3>
-                        <p>Estudante em Desenvolvimento de Sistemas</p>
-                        <div class="social-links">
-                            <a href="https://github.com/sahmlo"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/sara-melo-b47b97367/"><i class="fab fa-linkedin"></i></a>
+                        <p>Desenvolvimento Web · Ciência e Tecnologia</p>
+
+                        <div class="profile-tags">
+                            <span>UFBA</span>
+                            <span>SENAI</span>
+                            <span>Web</span>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Frontend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Habilidades -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">02 — Habilidades</span>
+                    <h2>Tecnologias que fazem parte da minha jornada</h2>
+                    <p>
+                        Uma seleção do que já estudei e utilizei em projetos acadêmicos e práticos.
+                    </p>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i>Backend</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 45%"></div>
-                            </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <span class="skill-number">01</span>
+                        <h3>Desenvolvimento Web</h3>
+                        <div class="tag-list">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Node.js</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">02</span>
+                        <h3>Programação</h3>
+                        <div class="tag-list">
+                            <span>Python</span>
+                            <span>JavaScript</span>
                         </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Ferramentas</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Git/GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">03</span>
+                        <h3>Banco de Dados</h3>
+                        <div class="tag-list">
+                            <span>MySQL</span>
                         </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Figma</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span class="skill-number">04</span>
+                        <h3>Ferramentas</h3>
+                        <div class="tag-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Figma</span>
+                            <span>Canva</span>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Projeto Exemplo</h3>
-                        <p>Descrição do projeto exemplo.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                    </div>
+        <!-- Projetos -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">03 — Projetos</span>
+                    <h2>O que venho construindo</h2>
+                    <p>
+                        Projetos acadêmicos e experiências práticas que fazem parte da minha formação.
+                    </p>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+
+                <div class="projects-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-index">01</div>
+                        <div class="project-content">
+                            <span class="project-type">TCC · SENAI</span>
+                            <h3>Localiza Aê</h3>
+                            <p>
+                                Projeto de conclusão de curso desenvolvido durante a formação técnica,
+                                voltado para uma solução de previsão de demanda. Aqui será possível
+                                apresentar o problema, a solução e a participação da equipe.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Projeto acadêmico</span>
+                                <span>Gerenciamento de Clinica de Saúde</span>
                             </div>
+
+                            <span class="project-note">Link do projeto será adicionado</span>
                         </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Calculadora em Python</h3>
-                        <p>Aplicação de calculadora simples para cálculos.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-index">02</div>
+                        <div class="project-content">
+                            <span class="project-type">Grand Prix · SENAI</span>
+                            <h3>Projeto de previsão de demanda</h3>
+                            <p>
+                                Protótipo desenvolvido para o Grand Prix de Inovação do SENAI,
+                                explorando uma proposta baseada em inteligência artificial para
+                                apoiar a previsibilidade de demanda.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Inovação</span>
+                                <span>IA</span>
+                                <span>Protótipo</span>
                             </div>
+
+                            <span class="project-note">Link do projeto será adicionado</span>
                         </div>
-                        <div class="project-placeholder">
-                            <i class="fas fa-tasks"></i>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-index">03</div>
+                        <div class="project-content">
+                            <span class="project-type">Acadêmico</span>
+                            <h3>Projetos de formação</h3>
+                            <p>
+                                Espaço para reunir sistemas, dinâmicas e trabalhos desenvolvidos
+                                durante o SENAI e a UFBA, mostrando diferentes etapas da minha
+                                evolução em tecnologia.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>SENAI</span>
+                                <span>UFBA</span>
+                                <span>Estudos</span>
+                            </div>
+
+                            <span class="project-note">Projetos serão adicionados</span>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>To-Do List</h3>
-                        <p>Aplicação para gerenciar tarefas diárias.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Vamos Trabalhar Juntos</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Entre em Contato</h3>
-                    <p>Estou sempre interessado em novos projetos e oportunidades. Vamos conversar sobre como posso ajudar a transformar suas ideias em realidade!</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>smsj318@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Telefone</h4>
-                                <p>+55 (71) 98383-0092</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Localização</h4>
-                                <p>Salvador, BA - Brasil</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Formação -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">04 — Formação</span>
+                    <h2>Minha formação</h2>
                 </div>
 
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                        <label for="name">Nome</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Seu Email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Assunto" required>
-                        <label for="subject">Assunto</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-                        <label for="message">Mensagem</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
-            </div>
-        </div>
-    </section>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026 — Presente</span>
+                            <h3>Bacharelado Interdisciplinar em Ciência e Tecnologia</h3>
+                            <p class="institution">Universidade Federal da Bahia — UFBA</p>
+                            <p>
+                                Formação interdisciplinar que amplia minha base em ciência,
+                                tecnologia e pensamento crítico.
+                            </p>
+                        </div>
+                    </article>
 
-    <!-- Footer -->
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 — 2026</span>
+                            <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                            <p class="institution">Serviço Nacional de Aprendizagem Industrial — SENAI</p>
+                            <p>
+                                Formação técnica com desenvolvimento de sistemas, programação,
+                                banco de dados, projetos e desenvolvimento web.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="section-label">05 — Experiência</span>
+            <h2>Experiência profissional</h2>
+        </div>
+
+        <div class="experience-card reveal">
+            <div>
+                <span class="timeline-date">Dezembro 2025 — Presente</span>
+                <h3>Jovem Aprendiz · Serviços Administrativos</h3>
+                <p class="institution">Construtora JF PRADO LTDA </p>
+            </div>
+
+            <p>
+                Atuação no suporte administrativo e operacional do setor de compras,
+                com organização de documentos e informações, atualização de planilhas,
+                contratos e pedidos, cadastro em sistemas internos e acompanhamento
+                de boletins de medição.
+            </p>
+        </div>
+<br>
+        <div class="experience-card reveal">
+            <div>
+                <span class="timeline-date">Setembro 2024 — Setembro 2025</span>
+                <h3>Jovem Aprendiz · Serviços de Supermercado</h3>
+                <p class="institution">Atakarejo</p>
+            </div>
+
+            <p>
+                Atuação em ambiente dinâmico e de alto volume, com foco em eficiência
+                operacional, atendimento ao público e organização do setor.
+                Desenvolvimento de habilidades como trabalho em equipe, comunicação,
+                organização e responsabilidade com as atividades diárias.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- Contato -->
+        <section id="contact" class="section contact-section section-alt">
+            <div class="container contact-grid">
+                <div class="section-heading reveal">
+                    <span class="section-label">06 — Contato</span>
+                    <h2>Vamos conversar?</h2>
+                    <p>
+                        Estou aberta a oportunidades, projetos e conexões na área de tecnologia.
+                    </p>
+                </div>
+
+                <div class="contact-links reveal">
+                    <a href="https://github.com/sahmlo" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span>GitHub</span>
+                        <strong>@sahmlo ↗</strong>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sara-melo-s-de-jesus-b47b97367/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <span>LinkedIn</span>
+                        <strong>Sara Melo S. de Jesus ↗</strong>
+                    </a>
+
+                    <!-- e-mail profissional -->
+                    <a href="mailto:smsj318@gmail.com" class="contact-link">
+                        <span>E-mail</span>
+                        <strong>smsj318@gmail.com ↗</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Sara Melo. Todos os direitos reservados.</p>
-                </div>
-                <div class="footer-socials">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Sara Melo S. de Jesus.</p>
+            <p>Feito com HTML, CSS e JavaScript.</p>
         </div>
     </footer>
 
