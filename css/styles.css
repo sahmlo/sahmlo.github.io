@@ -19,8 +19,8 @@ body.light-theme {
     --surface: #ffffff;
     --surface-light: #eeeeF5;
     --text: #18151f;
-    --muted: #646270;
-    --border: rgba(24, 21, 31, 0.11);
+    --muted: #555260;
+    --border: rgba(24, 21, 31, 0.14);
     --accent: #7c3aed;
     --accent-strong: #6d28d9;
     --shadow: 0 20px 60px rgba(38, 28, 60, 0.12);
@@ -61,6 +61,7 @@ button {
 }
 
 /* Navegação */
+
 .header {
     position: sticky;
     top: 0;
@@ -149,6 +150,7 @@ button {
 }
 
 /* Apresentação */
+
 .hero {
     min-height: calc(100vh - 72px);
     display: flex;
@@ -302,6 +304,7 @@ button {
 }
 
 /* Seções */
+
 .section {
     padding: 110px 0;
 }
@@ -328,6 +331,7 @@ button {
 }
 
 /* Sobre */
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -400,6 +404,7 @@ button {
 }
 
 /* Habilidades */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -436,6 +441,7 @@ button {
 }
 
 /* Projetos */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -460,7 +466,11 @@ button {
 
 .project-card.featured {
     grid-column: span 2;
-    background: linear-gradient(135deg, rgba(167, 139, 250, 0.13), var(--surface) 50%);
+    background: linear-gradient(
+        135deg,
+        rgba(167, 139, 250, 0.13),
+        var(--surface) 50%
+    );
 }
 
 .project-index {
@@ -499,6 +509,7 @@ button {
 }
 
 /* Formação */
+
 .timeline {
     position: relative;
     max-width: 850px;
@@ -544,6 +555,7 @@ button {
 }
 
 /* Experiência */
+
 .experience-card {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
@@ -564,6 +576,7 @@ button {
 }
 
 /* Contato */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -602,6 +615,7 @@ button {
 }
 
 /* Rodapé */
+
 .footer {
     padding: 28px 0;
     border-top: 1px solid var(--border);
@@ -616,6 +630,7 @@ button {
 }
 
 /* Animações */
+
 .reveal {
     opacity: 0;
     transform: translateY(22px);
@@ -627,7 +642,92 @@ button {
     transform: translateY(0);
 }
 
+/* Ajustes específicos do modo claro */
+
+body.light-theme .profile-tags span,
+body.light-theme .tag-list span {
+    color: #4b4652;
+    background: #f0eef5;
+    border-color: #d2cedb;
+}
+
+body.light-theme .project-card {
+    background: #ffffff;
+    border-color: #d8d5df;
+}
+
+body.light-theme .project-card:hover {
+    background: #ffffff;
+    border-color: #b9a8e8;
+}
+
+body.light-theme .project-card.featured {
+    background: linear-gradient(
+        135deg,
+        rgba(124, 58, 237, 0.08),
+        #ffffff 55%
+    );
+}
+
+body.light-theme .project-content h3 {
+    color: #111827;
+}
+
+body.light-theme .project-content p {
+    color: #4b5563;
+}
+
+body.light-theme .project-type,
+body.light-theme .eyebrow,
+body.light-theme .section-label,
+body.light-theme .timeline-date {
+    color: #7138d9;
+}
+
+body.light-theme .project-index {
+    color: rgba(80, 70, 100, 0.12);
+}
+
+body.light-theme .project-note {
+    color: #64606c;
+}
+
+body.light-theme .project-link {
+    color: #27232d;
+}
+
+body.light-theme .project-link:hover {
+    color: var(--accent);
+}
+
+body.light-theme .button.secondary {
+    background: #ffffff;
+    border-color: #d2cedb;
+    color: #27232d;
+}
+
+body.light-theme .skill-card {
+    background: #ffffff;
+}
+
+body.light-theme .skill-card:hover {
+    border-color: #b9a8e8;
+}
+
+body.light-theme .profile-card {
+    background: #ffffff;
+}
+
+body.light-theme .contact-link {
+    background: #ffffff;
+}
+
+body.light-theme .contact-link:hover {
+    border-color: #b9a8e8;
+}
+
 /* Responsividade */
+
 @media (max-width: 900px) {
     .hero-grid,
     .about-grid,
